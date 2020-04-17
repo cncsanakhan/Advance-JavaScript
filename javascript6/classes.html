@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CLASSES</title>
+        <script>
+
+     class Rectangle {
+        constructor (_width , _height , _color) {
+            console.log("my rectangle is being created");
+            this.width = _width;
+            this.height = _height;
+            this.color = _color;
+        }
+        get area(){
+            return  this.width * this.height ;
+        }
+     }
+
+     let Rectangle1 = new Rectangle(5, 4, "orange");
+
+     console.log(Rectangle1);
+     console.log(Rectangle1.area);
+
+
+     class Zakat {
+         constructor ( _goldWeight, _goldrate, _percentage) {
+             console.log("my zakat object is being ready");
+        
+             this.goldWeight = _goldWeight;
+             this.goldrate = _goldrate; 
+             this.percentage = _percentage;
+
+         }
+         get payment() {
+             const  goldper1gms = this.goldrate * 10 /100;
+             const  per1gms = this.goldWeight * 2.5/100;
+             return  per1gms * goldper1gms;
+                    
+         }
+     }
+     let Zakat1 = new Zakat(243, 56200 , 2.5);
+     console.log(Zakat1);
+     console.log(Zakat1.payment);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </head>
+</html>
